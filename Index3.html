@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment6 Joshua Headley</title>
+    <link rel="stylesheet"type="text/css" href="styles/Assignment6.css" />
+    <script src="js/Assignment6.js"></script>
+</head>
+
+<body>
+        <select onchange="MenuInput()" id="menu">
+            <option></option>
+            <option>Add Customer</option>
+            <option>Change Address</option>
+            <option>Delete Customer</option>
+        </select>
+    <hr>
+<br>
+<section id="AddCustomer" class="ADD">
+        <label>Enter a Customer ID: </label>
+        <input type="text" id="custid">
+        <label class="warning_1"> The customer ID should be 5 uppercase text characters.</label>
+        <br>
+        <label>Pleaes enter the Customer Name: </label>
+        <input type="text" id="custname">
+        <br>
+        <label>Please enter the Customer City</label>
+        <input type="text" id="custcity">
+        <br>
+        <button onclick="CreateCustomer()" id="newcust">Add a New Customer</button>
+        <br>
+        <label id="result">The operation's result will display here.</label>
+</section>
+<br>
+<section id="ChangeAddress" class="CHANGE">
+    <label>Enter a order number: </label>
+    <input type="text" id="orderid">
+    <br>
+    <label>Enter a ship-to name: </label>
+    <input type="text" id="shipname">
+    <br>
+    <label>Enter a ship-to street address: </label>
+    <input type="text" id="shipaddress">
+    <br>
+    <label>Enter a ship-to city: </label>
+    <input type="text" id="shipcity">
+    <br>
+    <label>Enter a ship-to postal code: </label>
+    <input type="text" id="shipcode">
+    <br>
+    <button onclick="updateOrderAddress()" id="ChangeOrder">Update a order address</button>
+    <br>
+    <label id="result_2">The operation's result will display here.</label>
+</section>
+<br>
+<section id="DeleteCustomer" class="DELETE">
+    <label>Enter a Customer ID: </label>
+    <input type="text" id="removeid">
+    <label class="warning_2"> The customer ID should be 5 uppercase text characters.</label>
+    <br>
+    <button onclick="window.confirm('Confirm deletion'); deleteCustomer() " id="Removecust">Delete a customer</button>
+    <br>
+    <label id="result_3">The operation's result will display here.</label>
+</section>
+
+</body>
+</html>

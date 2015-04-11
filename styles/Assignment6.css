@@ -1,0 +1,5 @@
+.warning_1 {font-style: italic; color: red; }
+.warning_2 {font-style: italic; color: red; }
+section.ADD{background-color: #666699 ; visibility: hidden;}
+section.CHANGE{background-color: #666699 ; visibility: hidden;}
+section.DELETE{background-color: #666699 ; visibility: hidden;}
